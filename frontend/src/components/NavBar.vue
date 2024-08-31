@@ -26,11 +26,15 @@
             </li>
             <!--opciones de entrenadores-->
             <li class="nav-item" v-if="isAuthenticated && userRole =='entrenador'">
-
+              <router-link to="/instructores/mantenimiento" class="nav-link">Mantenimiento</router-link>
+              <router-link to="/instructores/cliente" class="nav-link">Cliente</router-link>
+              <router-link to="/instructores/cursos" class="nav-link">Cursos</router-link>
+              <router-link to="/instructores/rutinas" class="nav-link">Rutinas</router-link>
             </li>
             <!--opciones para cliente-->
             <li class="nav-item" v-if="isAuthenticated && userRole == 'cliente'">
-
+              <router-link to="/clientes/inscribirse" class="nav-link">Inscribirse</router-link>
+              <router-link to="/clientes/desinscribirse" class="nav-link">Desinscribirse</router-link>
             </li>
             <!--sesion-->
             <li class="nav-item" v-if="isAuthenticated">
@@ -51,8 +55,8 @@ export default{
   props: {},
   data(){
     return{
-      isAuthenticated: false,
-      userRole: null
+      isAuthenticated: true,
+      userRole: 'entrenador'
     };
   },
   methods:{

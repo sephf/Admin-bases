@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import AppIngreso from './components/AppIngreso.vue';
-import Contactos from './components/AppContactos.vue';
+import AppContactos from './components/AppContactos.vue';
 import ServicioInscripcion from './components/servicios/ServicioInscripcion.vue';
+import AppInicio from './components/AppInicio.vue';
 
 const routes = [
-  { path: '/contactos', component: Contactos, name: 'contactos' },
-  { path: '/ingreso', component: AppIngreso, name: 'ingreso' },
-  { path: '/servicios/inscripcion', component:ServicioInscripcion, name: 'inscripcion'},
+  { path: '/', component: AppInicio },
+  { path: '/contactos', component: AppContactos},
+  { path: '/ingreso', component: AppIngreso},
+  { path: '/servicios/inscripcion', component:ServicioInscripcion},
 ];
 
 const router = createRouter({
