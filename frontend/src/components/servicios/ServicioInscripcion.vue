@@ -60,9 +60,13 @@ export default {
     };
   },
   async created() {
+    try{
       const response = await fetch('http://localhost:3000/api/cursos');
       const data = await response.json();
       this.cursos = data;
+    }catch(error){
+      this.cursos=null;
+    }
   },
   methods: {
     async submitForm() {
