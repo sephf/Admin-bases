@@ -6,7 +6,7 @@
       <img src="@/assets/barra.png" alt="Logo Gimnasio" class="rebote-logo" />
     </div>
     <ul>
-      <li>Nombre: Fit Studio</li>
+      <li>Gimnasio Fit Studio</li>
       <li>Dirección: Calle 24, avenida 14, San José, Costa Rica</li>
       <li>Horario: Lunes a Viernes, 6 AM - 9 PM</li>
     </ul>

@@ -3,9 +3,11 @@
     <NavBar/>
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <router-view></router-view>
+    <!--
     <h1>Conexión con el Servidor Express</h1>
     <button @click="enviarDatos">Enviar Datos</button>
     <p>{{ mensaje }}</p>
+    -->
   </div>
 </template>
 
@@ -40,7 +42,6 @@ export default {
 </script>
 
 <style>
-/*
 #app {
   background: #6a11cb;
   background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
@@ -48,5 +49,5 @@ export default {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}*/
+}
 </style>
